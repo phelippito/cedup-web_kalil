@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurante - O Maiora</title>
+</head>
+
+<body bgcolor="#CCC">
+
+  <!-- UM POUCO DE ESTILIZAÇÃO DO FORMULÁRIO E RODAPÉ -->
+
+  <style>
+    #cardapio {
+      background-color: cadetblue;
+      width: 70%;
+      margin-left: 1%;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    #imagem1{
+        width: 50px;
+        height: 50px;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .black {
+      background-color: #000;
+      color: chartreuse;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding: 5px;
+    
+    }
+
+    .rodape {
+      height: 90px;
+    }
+  </style>
+
+  <!-- 
+        DADOS DA VAGA 
+    -->
+
+  <div class="black"></div>    
+    <div class="titulo">
+        <h1>CARDÁPIO</h1>
+    </div>
+  <div class="entradas">
+    <h1>Entradas</h1>
+        <ul>      
+            <li>Bolinho de Macaxeira;</li>
+            <li>Bruschetta</li>
+            <li>Salada</li>
+        </ul>        
+    </div>
+    <div class="imagem1">
+        <img src="images/Captura de tela 2024-03-01 210816.png">
+    </div>
+    <div class="pratos_principais">
+        <h1>Pratos Principais</h1>    
+        <ul>  
+            <li>Filé Mignon ao Molho de Mostarda;</li>
+            <li>Risoto de Frutos do Mar";</li>
+            <li>Feijoada</li>
+            <li>Xinxim de Galinha</li> 
+        </ul>
+    </div>
+    <div class="imagem2">
+        <img src="images/Captura de tela 2024-03-01 210937.png">
+    </div>
+    <div class="acompanhamentos">            
+        <h1>Acompanhamentos</h1>
+        <ul>
+            <li>Purê de Batata</li>
+            <li>Arroz</li>
+            <li>Legumes</li>          
+        </ul>
+    </div>
+    <div class="imagem3">
+        <img src="images/Captura de tela 2024-03-01 211127.png">
+    </div>
+    <div class="sobremesas">    
+    <h1>Sobremesas</h1>
+        <ul>
+            <li>Sorvete de creme</li>
+            <li>Petit Gateau</li>
+            <li>Gelatina</li>          
+        </ul>
+    </div>
+    <div class="imagem4">
+        <img src="images/Captura de tela 2024-03-01 211233.png">
+    </div>
+    <div class="bebidas">    
+    <h1>Bebidas</h1>
+        <ul>
+            <li>Refrigerante</li>
+            <li>Água</li>
+            <li>Vinho</li>
+            <li>Cerveja</li>          
+        </ul>
+    </div>
+    <div class="imagem5">
+        <img src="images/Captura de tela 2024-03-01 211343.png">
+    </div>    
+    
+<p>Nosso cardápio contempla com opções de alimentos sem glútem, sem lactose, vegetariano e vegano!<br></p>
+<br>
+
+
+  <!--
+        INÍCIO DO FORMULÁRIO 
+    -->
+
+  <hr>
+  <form action="" id="cardapio">
+    <fieldset>
+      <legend><u>Reservas</u></legend>
+
+      <!--DADOS PESSOAIS, TELEFONE E ENDEREÇO  -->
+
+      <p><u>Dados Pessoais</u></p>
+      <label for="nome">Seu nome: </label>
+      <input name="nome" type="text" placeholder="Digite seu nome completo"> <br>
+      <label for="qtdpessoas">Número de pessoas: </label>
+      <input name="qtdpessoas" type="text" placeholder="Quantidade de pessoas"> <br>
+
+      <input type="radio" name="Preferências" value="Almoço">
+      <label for="principal">Almoço</label><br>
+      <input type="radio" name="Preferências" value="Jantar">
+      <label for="principal">Jantar</label><br>
+
+      <p><u>Entradas</u></p>
+      <input type="checkbox" name="Bolinho" value="Bolinho de Macaxeira">
+      <label for="principal">Bolinho de Macaxeira</label><br>
+      <input type="checkbox" name="bruschetta" value="bruschetta">
+      <label for="principal">Bruschetta</label><br>
+      <input type="checkbox" name="Salada" value="Salada">
+      <label for="principal">Bolinho de Macaxeira</label><br>
+
+      <p><u>Pratos Principais</u></p>
+      <input type="checkbox" name="Filé Mignon ao Molho de Mostarda" value="Filé Mignon ao Molho de Mostarda">
+      <label for="principal">Filé Mignon ao Molho de Mostarda</label><br>
+      <input type="checkbox" name="Risoto de Frutos do Mar" value="Risoto de Frutos do Mar">
+      <label for="principal">Risoto de Frutos do Mar</label><br>
+      <input type="checkbox" name="Feijoada" value="Feijoada">
+      <label for="principal">Feijoada</label><br>
+      <input type="checkbox" name="Xinxim de Galinha" value="Xinxim de Galinha">
+      <label for="principal">Xinxim de Galinha</label><br>
+
+      <p><u>Acompanhamentos</u></p>
+      <input type="checkbox" name="Purê de Batata" value="Purê de Batata">
+      <label for="principal">Purê de Batata</label><br>
+      <input type="checkbox" name="Arroz" value="Arroz">
+      <label for="principal">Arroz</label><br>
+      <input type="checkbox" name="Legumes" value="Legumes">
+      <label for="principal">Legumes</label><br>
+
+      <p><u>Sobremesas</u></p>
+      <input type="checkbox" name="Sorvete de creme" value="Sorvete de creme">
+      <label for="principal">Sorvete de creme</label><br>
+      <input type="checkbox" name="Petit Gateau" value="Petit Gateau">
+      <label for="principal">Petit Gateau</label><br>
+      <input type="checkbox" name="Gelatina" value="Gelatina">
+      <label for="principal">Gelatina</label><br>
+
+      <p><u>Bebidas</u></p>
+      <input type="checkbox" name="Refrigerante" value="Refrigerante">
+      <label for="principal">Refrigerante</label><br>
+      <input type="checkbox" name="Água" value="Água">
+      <label for="principal">Água</label><br>
+      <input type="checkbox" name="Vinho" value="Vinho">
+      <label for="principal">Vinho</label><br>
+      <input type="checkbox" name="Cerveja" value="Cerveja">
+      <label for="principal">Cerveja</label><br>
+            
+      <!-- ENVIAR -->
+
+      <br>
+      <br>
+
+      Aceito os <a href="http://www.google.com">Termos</a> <input type="checkbox" name="aceite" value="OK"> <br><br>
+      <input type="button" name="enviar" value="Enviar">
+    </fieldset>
+  </form>
+
+  <br>
+
+  <div class="black" class="rodape">
+    <p>&copy; 2024 - Site desenvolvido por Phelippito Blaublau para a disciplina Desenvolvimento Web (CEDUP TIMBÓ)</p>
+    <p><em>Atenção: a vaga anunciada é fictícia e qualquer semelhança com a realidade é apenas coincidência.</em></p>
+  </div>
+  <hr>
+</body>
+
+</html>
